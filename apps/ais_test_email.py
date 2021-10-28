@@ -9,7 +9,8 @@ import pandas as pd
 import streamlit as st
 import torch
 from torch.utils.data import DataLoader
-from transformers import DistilBertTokenizerFast, DistilBertForSequenceClassification, Trainer, TrainingArguments 
+from transformers import DistilBertTokenizerFast, DistilBertForSequenceClassification, Trainer, TrainingArguments
+transformers.logging.set_verbosity_error()
 
 import nltk
 nltk.download('punkt')
