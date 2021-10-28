@@ -86,7 +86,7 @@ def app():
 		if check_test_data:
 			tst= pd.read_csv('./apps/test_ais.csv')
 			st.write(tst)
-
+ 
 		 
 	#Main block of code	 
 	test=load_test()	
@@ -96,5 +96,6 @@ def app():
 	delete_all_zeros()
 	delete_all_data()
 	check_test_data()
+
 	 
 	         

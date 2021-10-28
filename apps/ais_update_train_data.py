@@ -22,8 +22,11 @@ def app():
 	def enter_sentence_category(): 
 		new_data=[] 
 		new={}    
-		#need two text fields 
+		#need two text fields
+
 		new['sentences']=st.text_input("Enter sentence for training data set: either something of interest or not")
+		st.write(new['sentences'])
+		#new['sentences']= new_sent# .strip()
 		new['labels']=st.number_input('Enter label: 1 for sentence of interest and 0 for sentence not of interest', min_value=0, max_value=1)
 		new_data.append(new) 
 		return new_data
@@ -83,10 +86,13 @@ def app():
 
 
 	def check_train_data():
-		check_train_data=st.checkbox(' Check latest train dataset')
-		if check_train_data:
-			tr= pd.read_csv('./apps/train_ais.csv')
-			st.write(tr)
+			check_train_data=st.checkbox(' Check latest train dataset')
+			if check_train_data:
+				tr= pd.read_csv('./apps/train_ais.csv')
+				st.write(tr)
+
+
+			
 
 		 
 	#Main block of code	 
