@@ -5,7 +5,7 @@ import pandas as pd
 import streamlit as st
 import torch
 from transformers import DistilBertTokenizerFast,DistilBertForSequenceClassification, Trainer, TrainingArguments
- 
+transformers.logging.set_verbosity_error()
  
 
 """app performs hyperparameter optimization with optuna backend and then traininng of model with best hyperparameters"""
