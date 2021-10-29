@@ -26,7 +26,6 @@ def app():
 
 		new['sentences']=st.text_input("Enter sentence for training data set: either something of interest or not")
 		st.write(new['sentences'])
-		#new['sentences']= new_sent# .strip()
 		new['labels']=st.number_input('Enter label: 1 for sentence of interest and 0 for sentence not of interest', min_value=0, max_value=1)
 		new_data.append(new) 
 		return new_data
