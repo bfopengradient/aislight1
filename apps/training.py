@@ -19,7 +19,7 @@ def app():
 	#call in training once search is done
 	@st.cache(allow_output_mutation=True)
 	def model_init():
-					return DistilBertForSequenceClassification.from_pretrained('distilbert-base-cased', return_dict=True)
+					return DistilBertForSequenceClassification.from_pretrained('./fine_tuned_model', return_dict=True)
 
 	@st.cache(allow_output_mutation=True)
 	def get_tokenizer():
