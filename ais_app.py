@@ -6,9 +6,6 @@ import streamlit as st
 
 #Main page that calls the multiapp 
 
-
-
-
 #LOGO_IMAGE  and title positioning 
 NAME_IMAGE = "./apps/RGB_Secondary.png"
 logo = Image.open(NAME_IMAGE)
@@ -22,7 +19,7 @@ with col3:
     st.write( "")
  
 
-#Custom button to match color scheme thats contained in the 
+#Custom button to match color scheme thats contained in the logo  
 st.markdown("""
 <style>
 div.stButton > button:first-child {
