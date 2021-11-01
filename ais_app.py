@@ -6,8 +6,8 @@ import streamlit as st
 
 #Main page that calls the multiapp 
 
-#LOGO_IMAGE  and title positioning 
-NAME_IMAGE = "./apps/RGB_Secondary.png"
+#LOGO_IMAGE  and title positioning ,  put in your own logo here!!
+NAME_IMAGE = "Your logo goes here"
 logo = Image.open(NAME_IMAGE)
 st.image(logo, width=700) 
 col1, col2, col3 = st.beta_columns([2,2,1])
