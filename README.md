@@ -1,1 +1,1 @@
-AI Supervisor is an opensource project from Open Gradient. 
+AI Supervisor is an open source project from Open Gradient.  
