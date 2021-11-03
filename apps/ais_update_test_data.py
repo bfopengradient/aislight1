@@ -23,7 +23,7 @@ def app():
 		new_data=[] 
 		new={}    
 		#need two text fields 
-		new['sentences']=st.text_input("Enter sentence for test data set: either something that is bad or innocent")
+		new['sentences']=st.text_input("Enter sentence for test data set: either something that is of interest or not")
 		new['labels']=st.number_input('Enter label: 1 for sentence of interest and 0 for sentence not of interest', min_value=0, max_value=1)
 		new_data.append(new) 
 		return new_data
