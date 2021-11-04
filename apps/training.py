@@ -104,7 +104,7 @@ def app():
 			gif_runner.empty()	
 			st.markdown(f"#### F1 Score:{trainer.evaluate()['eval_f1']}")
 			st.markdown("#### Training complete")
-			st.markdown("#### Model saved locally to './fine_tuned_model' ")
+			st.markdown("#### Model saved to './fine_tuned_model' ")
 			trainer.save_model('./fine_tuned_model')
 
 	#Main block of code 
