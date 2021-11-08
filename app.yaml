@@ -1,0 +1,15 @@
+runtime: custom
+env: flex
+
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 15
+  cool_down_period_sec: 180
+  cpu_utilization:
+    target_utilization: 0.9
+  target_concurrent_requests: 100
+
+resources:
+  cpu: 4
+  memory_gb: 8
+  disk_size_gb: 100
